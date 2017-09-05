@@ -1,0 +1,82 @@
+html{
+	width: 100%;
+
+}
+body{
+	width:100%;
+	background: #fff;
+}
+
+.short-card{
+	background-color: transparent;
+	color:#fff;
+	width:80%;
+	height: 75px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin:16px auto;
+}
+
+.image-logo{
+	max-width:150px;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap:wrap;
+
+}
+.card{
+	width:500px;
+	min-height:300px;
+	max-width:95%;
+	background-color: white;
+	color:black;
+	margin:8px;
+	overflow:hidden;
+}
+
+.shadow{
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    transition:box-shadow .5s ease-in-out;
+}
+
+.shadow:hover{
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+        0 1px 8px 0 rgba(0, 0, 0, 0.12),
+        0 3px 3px -2px rgba(0, 0, 0, 0.4);
+}
+
+.title{
+		font-family: 'cabin', serif;
+		font-weight:300;
+		display: flex;
+		align-items: center;
+		width:100%;
+		height:50px;
+		color:#fff;
+		padding:2%;
+		margin:0;
+}
+
+.gray{
+	background-color: #616161;
+}
+
+.red{
+	background-color: #E91E63;
+}
+
+.indigo{
+	background-color: #3F51B5;
+}
+
+.text-section{
+	text-indent: 12px;
+	padding:16px;
+}
