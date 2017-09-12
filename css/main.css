@@ -7,6 +7,45 @@ body{
 	background: #fff;
 }
 
+nav {
+	background-color: #d62020;
+	padding: 15px;
+}
+
+nav ul {
+	list-style-type: none;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li.brand {
+	float: left;
+	font-size: 1.2em;
+}
+
+nav ul li.brand a:hover {
+	background: none;
+	color: white;
+}
+
+
+nav ul li a {
+	text-decoration: none;
+	font-size: 1em;
+	color: white;
+	padding: 15px;
+}
+
+nav ul li a:hover {
+	background-color: #eee;
+	color: #555;
+}
+
 .short-card{
 	background-color: transparent;
 	color:#fff;
