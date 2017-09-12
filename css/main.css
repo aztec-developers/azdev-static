@@ -21,14 +21,28 @@ nav ul {
 
 nav ul li {
     display: inline;
-    padding: 15px;
-    
 }
+
+nav ul li.brand {
+	float: left;
+}
+
+nav ul li.brand a:hover {
+	background: none;
+	color: white;
+}
+
 
 nav ul li a {
 	text-decoration: none;
 	font-size: 1.2em;
 	color: white;
+	padding: 15px;
+}
+
+nav ul li a:hover {
+	background-color: #eee;
+	color: #555;
 }
 
 .short-card{
