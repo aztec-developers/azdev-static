@@ -4,7 +4,7 @@ html{
 }
 body{
 	width:100%;
-	background: #fff;
+	background: #eee;
 }
 
 .short-card{
@@ -30,7 +30,7 @@ body{
 
 }
 .card{
-	width:500px;
+	width:100%;
 	min-height:300px;
 	max-width:95%;
 	background-color: white;
@@ -53,15 +53,15 @@ body{
 }
 
 .title{
-		font-family: 'cabin', serif;
-		font-weight:300;
-		display: flex;
-		align-items: center;
-		width:100%;
-		height:50px;
-		color:#fff;
-		padding:2%;
-		margin:0;
+	font-family: 'cabin', serif;
+	font-weight:300;
+	display: flex;
+	align-items: center;
+	width:100%;
+	height:50px;
+	color:#fff;
+	padding:2%;
+	margin:0;
 }
 
 .gray{
@@ -76,7 +76,39 @@ body{
 	background-color: #3F51B5;
 }
 
+.green {
+	background-color: #4caf50;
+}
+
 .text-section{
-	text-indent: 12px;
 	padding:16px;
+	font-size: 1.2em;
+	font-weight: 500; 
+}
+
+.header {
+	height: 100%;
+	width: 100%;
+}
+
+.card-title {
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.meeting-card {
+	text-align: center;
+}
+
+.header-vid {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 }
