@@ -30,7 +30,7 @@ nav ul li.brand {
 
 nav ul li.brand a:hover {
 	background: none;
-	color: white;
+	color: #eee;
 }
 
 
@@ -42,8 +42,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-	background-color: #eee;
-	color: #555;
+	color: #000;
 }
 
 .short-card{
@@ -63,15 +62,11 @@ nav ul li a:hover {
 
 .container{
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap:wrap;
-
+	flex-direction: column;
 }
 .card{
 	width:100%;
 	min-height:300px;
-	max-width:95%;
 	background-color: white;
 	color:black;
 	margin:8px;
@@ -118,6 +113,10 @@ nav ul li a:hover {
 .green {
 	background-color: #4caf50;
 }
+
+.amber {
+	background-color: #FF6F00;
+} 
 
 .text-section{
 	padding:16px;
