@@ -116,7 +116,11 @@ nav ul li a:hover {
 
 .amber {
 	background-color: #FF6F00;
-} 
+}
+
+.black {
+	background-color: #000;
+}
 
 .text-section{
 	padding:16px;
