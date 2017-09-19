@@ -29,7 +29,7 @@ nav ul li.brand {
 }
 
 nav ul li.brand a:hover {
-	background: none;
+	background: #eee;
 	color: #eee;
 }
 
@@ -41,7 +41,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-	color: #000;
+	background-color: #eeeeee;
+	color: #555555;
 }
 
 .short-card{
