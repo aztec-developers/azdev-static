@@ -126,6 +126,8 @@ nav ul li a.link:hover {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	width:100%;
+	height:100%;
 }
 
 .card{
