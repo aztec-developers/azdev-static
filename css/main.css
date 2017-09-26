@@ -7,6 +7,48 @@ body{
 	background: #eee;
 }
 
+#responsive {
+	height: 400px;
+	display: none;
+	width: 100%;
+	background-color: #d62020;
+    justify-content: space-around;
+    align-items: center; 
+    flex-direction: column;
+    font-size: 1em;
+}
+
+#responsive a {
+	text-decoration: none;
+	color: white;
+}
+
+nav a.icon {
+	position: absolute;
+	right: 20px;
+	color: white;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 1041px) {
+  nav a.icon {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  nav a.link {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  nav {
+  	height: 30px;
+  }
+}
+
 nav {
 	background-color: #d62020;
 	padding: 15px;
@@ -23,24 +65,21 @@ nav ul li {
     display: inline;
 }
 
-nav ul li.brand {
+nav ul li a.brand {
 	float: left;
 	font-size: 1.2em;
+	text-decoration: none;
+	color: white;
 }
 
-nav ul li.brand a:hover {
-	background: #eee;
-	color: #eee;
-}
-
-nav ul li a {
+nav ul li a.link {
 	text-decoration: none;
 	font-size: 1em;
 	color: white;
 	padding: 20px;
 }
 
-nav ul li a:hover {
+nav ul li a.link:hover {
 	background-color: #eeeeee;
 	color: #555555;
 }
@@ -62,14 +101,16 @@ nav ul li a:hover {
 
 .container{
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
 }
+
 .card{
 	width:100%;
 	min-height:300px;
 	background-color: white;
 	color:black;
-	margin:8px;
+	margin:20px;
 	overflow:hidden;
 }
 
