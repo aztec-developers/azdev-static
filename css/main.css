@@ -7,14 +7,37 @@ body{
 	background: #eee;
 }
 
+@keyframes expandAni {
+	From {height: 0px;}
+	To {height: 400px;}
+}
+
+@keyframes shrinkAni {
+	From {height: 400px;}
+	To {height: 0px;}
+}
+
+.expand {
+	animation: expandAni .5s ease-in-out forwards;
+}
+
+.shrink {
+	animation: shrinkAni .5s ease-in-out forwards;
+}
+
+#links {
+	justify-content: space-around;
+    align-items: center; 
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
 #responsive {
-	height: 400px;
+	height: 0px;
 	display: none;
 	width: 100%;
 	background-color: #d62020;
-    justify-content: space-around;
-    align-items: center; 
-    flex-direction: column;
     font-size: 1em;
 }
 
@@ -30,7 +53,7 @@ nav a.icon {
 	text-decoration: none;
 }
 
-@media screen and (min-width: 1041px) {
+@media screen and (min-width: 901px) {
   nav a.icon {display: none;}
   .topnav a.icon {
     float: right;
@@ -38,7 +61,7 @@ nav a.icon {
   }
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 900px) {
   nav a.link {display: none;}
   .topnav a.icon {
     float: right;

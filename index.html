@@ -29,12 +29,14 @@
     </nav>
 
     <div id="responsive">
+    	<div id="links">
     	<a class="link" href="#" onclick="green()">Why AzDev?</a>
         <a class="link" href="#" onclick="indigo()">Meetings</a>
         <!-- <li><a class="link" href="#">Our Projects</a></li> -->
         <a class="link" href="#" onclick="black()">Officers</a>
         <a class="link" href="#" onclick="amber()">FAQ</a>
         <a class="link" href="#" onclick="red()">Get In Touch</a>
+    </div>
     </div>
     <!-- <div class="header">
         <video loop muted>
@@ -73,6 +75,7 @@
                 <br> Matt Yamout
                 <br> Sergio Valencia
                 <br>Nimish Saxena
+                <br>Shekib Aziz
             </div>
         </div>
         <div class="card shadow">
@@ -213,11 +216,17 @@
     	
     	function myFunction() {
     		var nav = document.getElementById("responsive");
+    		var links = document.getElementById('links');
     		if(nav.style.display == 'flex'){
-    			nav.style.display = 'none';
+    			nav.classList.add('shrink');
+    			setTimeout(function(){ links.style.display = 'none'; }, 300);
+    			setTimeout(function(){ nav.style.display = 'none'; }, 500);
     			return;
     		}
+    		nav.classList.remove('shrink');
+    		nav.classList.add('expand');
     		nav.style.display = 'flex';
+    		links.style.display = 'flex';
     	}
     </script>
 </body>
