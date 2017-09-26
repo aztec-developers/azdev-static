@@ -1,12 +1,3 @@
-html{
-	width: 100%;
-
-}
-body{
-	width:100%;
-	background: #eee;
-}
-
 @keyframes expandAni {
 	From {height: 0px;}
 	To {height: 400px;}

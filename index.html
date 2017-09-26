@@ -18,24 +18,22 @@
     <nav>
         <ul>
             <li><a href="javascript:void(0);" class="brand">Aztec Developers</a></li>
-            <li><a class="link" href="#" onclick="green()">Why AzDev?</a></li>
-            <li><a class="link" href="#" onclick="indigo()">Meetings</a></li>
-            <!-- <li><a class="link" href="#">Our Projects</a></li> -->
-            <li><a class="link" href="#" onclick="black()">Officers</a></li>
-            <li><a class="link" href="#" onclick="amber()">FAQ</a></li>
-            <li><a class="link" href="#" onclick="red()">Get In Touch</a></li>
+            <li><a class="link" href="#about">About</a></li>
+            <li><a class="link" href="#times">Meetings</a></li>
+            <li><a class="link" href="#officers">Officers</a></li>
+            <li><a class="link" href="#faq">FAQ</a></li>
+            <li><a class="link" href="#contact">Contact</a></li>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </ul>
     </nav>
 
     <div id="responsive">
     	<div id="links">
-    	<a class="link" href="#" onclick="green()">Why AzDev?</a>
-        <a class="link" href="#" onclick="indigo()">Meetings</a>
-        <!-- <li><a class="link" href="#">Our Projects</a></li> -->
-        <a class="link" href="#" onclick="black()">Officers</a>
-        <a class="link" href="#" onclick="amber()">FAQ</a>
-        <a class="link" href="#" onclick="red()">Get In Touch</a>
+    	<a class="link" href="#about">About</a>
+        <a class="link" href="#times">Meetings</a>
+        <a class="link" href="#officers">Officers</a>
+        <a class="link" href="#faq">FAQ</a>
+        <a class="link" href="#contact">Contact</a>
     </div>
     </div>
     <!-- <div class="header">
@@ -46,13 +44,13 @@
     </div> -->
     <div class="container">
         <div class="card shadow">
-            <h2 class="title green">Why Aztec Developers?</h2>
+            <h2 id="about" class="title green">What's Aztec Developers?</h2>
             <div class="text-section">
                 Aztec Developers is a band of people looking to improve their overall knowledge in the constantly developing world of technology. We are here to learn new skills and have fun doing it, we welcome anyone looking to explore and innovate in this space. One of the biggest advantages once you become an Aztec Developr are the past members looking to give back and bring newcomers into the industry. Our members are members for life and we are always looking out for one another making sure everyone is on the right path for success. What we do is collaborate on teams in a hackathon format creating a fun environment where we compete and then vote on projects for the challenge at hand. The winning team gets to decide the next challenge that will take place keeping everyone involved and giving a chance to work on something they are passionate about.
             </div>
         </div>
         <div class="card shadow">
-            <h2 class="title indigo">When We Meet</h2>
+            <h2 id="times" class="title indigo">When We Meet</h2>
             <div class="text-section meeting-card">
                 <div class="card-title">
                     Where?
@@ -65,7 +63,7 @@
             </div>
         </div>
         <div class="card shadow">
-            <h2 class="title black">Officers</h2>
+            <h2 id="officers" class="title black">Officers</h2>
             <div class="text-section meeting-card">
                 <div class="card-title">
                     Officers
@@ -80,7 +78,7 @@
             </div>
         </div>
         <div class="card shadow">
-            <h2 class="title amber">FAQ</h2>
+            <h2 id="faq" class="title amber">FAQ</h2>
             <div class="text-section">
                 <div class="card-title">
                     Do I need to do anything to join?
@@ -113,7 +111,7 @@
             </div>
         </div>
         <div class="card shadow">
-            <h2 class="title red">Get In Touch</h2>
+            <h2 id="contact" class="title red">Contact us</h2>
             <div class="text-section meeting-card">
                 <div class="card-title">
                     Email
@@ -122,64 +120,7 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-    	var nav = document.getElementById("responsive");
-    	function amber() {
-			var el = document.querySelector('.amber');
-			goTo(el);
-    	}
-
-    	function indigo() {
-			var el = document.querySelector('.indigo');
-			goTo(el);
-    	}
-
-    	function green() {
-			var el = document.querySelector('.green');
-			goTo(el);
-    	}
-
-    	function black() {
-			var el = document.querySelector('.black');
-			goTo(el);
-    	}
-
-    	function red() {
-    		var el = document.querySelector('.red');
-    		goTo(el);
-    	}
-
-    	function goTo(element) {
-    		if(nav.style.display == 'flex'){
-    			window.scroll({
-					top: element.offsetTop + 450, 
-	  				left: 0, 
-				  	behavior: 'smooth' 
-				});
-				return;
-    		}
-			window.scroll({
-				top: element.offsetTop + 40, 
-  				left: 0, 
-			  	behavior: 'smooth' 
-			});
-    	}
-    	
-    	function myFunction() {
-    		var nav = document.getElementById("responsive");
-    		var links = document.getElementById('links');
-    		if(nav.style.display == 'flex'){
-    			nav.classList.add('shrink');
-    			setTimeout(function(){ links.style.display = 'none'; }, 300);
-    			setTimeout(function(){ nav.style.display = 'none'; }, 500);
-    			return;
-    		}
-    		nav.classList.remove('shrink');
-    		nav.classList.add('expand');
-    		nav.style.display = 'flex';
-    		links.style.display = 'flex';
-    	}
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
