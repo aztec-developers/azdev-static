@@ -7,6 +7,18 @@ body{
 	background: #eee;
 }
 
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #d62020;
+	padding: 16px;
+}
+#links{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 nav a.icon {
 	position: absolute;
 	top: 15px;
@@ -14,73 +26,56 @@ nav a.icon {
 	color: white;
 	text-decoration: none;
 }
+p{
+	text-align: justify;
+	text-justify: inter-word;
+}
 
 @media screen and (min-width: 901px) {
   nav a.icon {display: none;}
 }
 
 @media screen and (max-width: 900px) {
-  nav a.link {display: none;}
-  .topnav.responsive {position: relative;}
+	nav{
+		flex-direction: column;
+		min-height: 30px;
+	}
+	#links{
+		flex-direction: column;
+		display: none;
+	}
+	.topnav.responsive {position: relative;}
 
-  .topnav.responsive a.brand {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
-   .topnav.responsive a.link {
-   	 float: none;
-    display: block;
-   	text-align: center;
-   }
-
-   .topnav.responsive a.link:hover {
-   	background-color: #d62020;
-   	color: black;
-   }
-  
-  nav {
-  	min-height: 30px;
-  }
-}
-
-nav {
-	background-color: #d62020;
-	padding: 15px;
-}
-
-nav ul {
-	list-style-type: none;
-    margin: auto;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
+	#links a{
+		width:100%;
+		display: block;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
 }
 
 a.brand {
 	font-size: 1.2em;
 	text-decoration: none;
 	color: white;
-	float: left;
+	text-align: center;
 }
 
-nav ul li a.link {
+.link {
 	text-decoration: none;
 	font-size: 1em;
 	color: white;
 	padding: 20px;
 }
 
-nav ul li a.link:hover {
+.link:hover {
 	background-color: #eeeeee;
 	color: #555555;
 }
 
-nav ul li a.brand:hover {
+.brand:hover {
 	background-color: #d62020;
 	color: white;
 }
@@ -169,7 +164,7 @@ nav ul li a.brand:hover {
 .text-section{
 	padding:16px;
 	font-size: 1.2em;
-	font-weight: 500; 
+	font-weight: 500;
 }
 
 .header {
@@ -184,17 +179,4 @@ nav ul li a.brand:hover {
 
 .meeting-card {
 	text-align: center;
-}
-
-.header-vid {
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
 }

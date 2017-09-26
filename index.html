@@ -16,27 +16,32 @@
 
 <body>
     <nav class="topnav" id="myTopnav">
-        <ul>
-            <li><a href="javascript:void(0);" class="brand">Aztec Developers</a></li>
-            <li><a class="link" href="#about">About</a></li>
-            <li><a class="link" href="#times">Meetings</a></li>
-            <li><a class="link" href="#officers">Officers</a></li>
-            <li><a class="link" href="#faq">FAQ</a></li>
-            <li><a class="link" href="#contact">Contact</a></li>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </ul>
+            <a href="javascript:void(0);" class="brand">Aztec Developers</a>
+            <div id="links">
+                <a class="link" href="#about">About</a>
+                <a class="link" href="#times">Meetings</a>
+                <a class="link" href="#officers">Officers</a>
+                <a class="link" href="#faq">FAQ</a>
+                <a class="link" href="#contact">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
     </nav>
-    <!-- <div class="header">
-        <video loop muted>
-          <source src="media/homeVid.webm" type="video/webm"></source>
-          <source src="media/homeVid.mp4" type="video/mp4"></source>
-        </video>
-    </div> -->
     <div class="container">
         <div class="card shadow">
             <h2 id="about" class="title green">What's Aztec Developers?</h2>
             <div class="text-section">
-                Aztec Developers is a band of people looking to improve their overall knowledge in the constantly developing world of technology. We are here to learn new skills and have fun doing it, we welcome anyone looking to explore and innovate in this space. One of the biggest advantages once you become an Aztec Developr are the past members looking to give back and bring newcomers into the industry. Our members are members for life and we are always looking out for one another making sure everyone is on the right path for success. What we do is collaborate on teams in a hackathon format creating a fun environment where we compete and then vote on projects for the challenge at hand. The winning team gets to decide the next challenge that will take place keeping everyone involved and giving a chance to work on something they are passionate about.
+                <p>
+                Aztec Developers is a student organization at SDSU full of people looking to improve their overall knowledge in the constantly developing world of technology. We are here to learn new skills and have fun doing it, we welcome anyone looking to explore and learn new things. AzDev meetings are broken up into two sections, a discussion section, and a hack section.</p>
+                <h3>Discussion Section:</h3>
+                <p>The discussion section is the first 20-30 minutes of the meeting during in which members and industry experts give short talks on topics relating to Computer Science, software engineering, and technology.</p>
+                <h3>Hack Section:</h3>
+                <p>The hack section is similar to going to a (more relaxed) hackathon and is all about making cool stuff. Heres how it works: </p>
+                <ol>
+                <li><strong>Form Teams: </strong>Members are randomly broken up into teams and given this week's challenge.</li>
+                <li><strong>Build Stuff: </strong>Teams then have until the next meeting to work together on this problem.</li>
+                <li><strong>Show what you made: </strong>At the following meeting after the discussion phase, teams will give a short two-minute presentation of what they made, why they made it, and what they learned. </li>
+                </ol>
+                After all the presentations, we pick a winning team, which wins some small prizes and gets to pick the next challenge.</p>
             </div>
         </div>
         <div class="card shadow">
@@ -77,107 +82,37 @@
                 <div class="card-title">
                     What level of knowledge do I need previous to joining?
                 </div>
-                No previous knowledge is required! We are all here to learn and grow, our members are more than happy to assist those that may be new to the space or simply haven't used the tools we are familiar with.
+                No previous knowledge is required! We are all here to learn and grow, our members are more than happy to assist those that may be new to the software development or just want to learn new things.
                 <div class="card-title">
                     What if I'm not a Computer Science major?
                 </div>
-                Not a problem. We are open to anyone and everyone looking to gain knowledge in the tech space. That said we are software development oriented but if that's for you then AzDev is a great place to get that fix.
+                Not a problem. We are open to anyone and everyone looking to gain knowledge or make cool things. With that being said, we are software development oriented but by no means will we restrict you, regardless of technical ability.
                 <div class="card-title">
                     Can any grade level join?
                 </div>
-                YES! We will not turn away anyone looking to join, this club is based around learning and spreading experience especially to those new to tech which many lower grade levels might be.
+                Yes, AzDev is for everyone, beginners and experts.
                 <div class="card-title">
                     What do I need to bring to meetings?
                 </div>
-                We do live code hackathons at meetings so you will need to come equipped with a laptop to work on and hack away with. Other than that, just an eagerness to learn and to have fun.
-                <div class="card-title">
-                    What sort of tools do you use?
-                </div>
-                All of our members use a wide variety of tools for developing, and our members are more than happy to share their expertise and experience with those tools. Some examples of what our members are using are frameworks for the web such as Polymer and React, or different text editors such as Atom or Vim, or languages from Java to Elixir, we are always looking for cutting edge technologies and making use of the oldest ones. If you're looking for knowdlegde in any software related area, odds are one of our members has worked with it.
-                <div class="card-title">
-                    What is a hackathon?
-                </div>
-                Good question! Since this is something that our club is based around it's probably something good to cover. So a hackathon is a competition where small groups of developers work together to build some awesome software, sometimes under certain guidelines for a challenge, and other times it's a free for all, just go crazy. In our case we will be having challenge based hackathons, where teams will be created evenly based on experience, then they will work to complete a project that addresses the challenge. At the end everyone will vote on a winning project (except their own) and that team will get to choose the next challenge the club will take part in.
+                For hackathons at meetings you will need to come equipped with a computer to work on. Other than that, just an eagerness to learn and to have fun.
             </div>
         </div>
         <div class="card shadow">
             <h2 id="contact" class="title red">Contact us</h2>
             <div class="text-section meeting-card">
-                <div class="card-title">
-                    Email
+                <div>
+                    <strong>Email: </strong> aztecdevelopers@gmail.com
                 </div>
-                aztecdevelopers@gmail.com
+                <div>
+                    <strong>Location: </strong>GMCS 301
+                </div>
+                <div>
+                    <strong>Meeting Times: </strong>Monday 7pm-9pm, Friday 2pm-4pm.
+                </div>
             </div>
         </div>
     </div>
-<<<<<<< HEAD
-    <script type="text/javascript">
-    	var nav = document.getElementById("responsive");
-    	function amber() {
-			var el = document.querySelector('.amber');
-			goTo(el);
-    	}
-
-    	function indigo() {
-			var el = document.querySelector('.indigo');
-			goTo(el);
-    	}
-
-    	function green() {
-			var el = document.querySelector('.green');
-			goTo(el);
-    	}
-
-    	function black() {
-			var el = document.querySelector('.black');
-			goTo(el);
-    	}
-
-    	function red() {
-    		var el = document.querySelector('.red');
-    		goTo(el);
-    	}
-
-    	function goTo(element) {
-    		if(nav.style.display == 'flex'){
-    			window.scroll({
-					top: element.offsetTop + 450, 
-	  				left: 0, 
-				  	behavior: 'smooth' 
-				});
-				return;
-    		}
-			window.scroll({
-				top: element.offsetTop + 40, 
-  				left: 0, 
-			  	behavior: 'smooth' 
-			});
-    	}
-    	
-    	function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-    		// var nav = document.getElementById("responsive");
-    		// var links = document.getElementById('links');
-    		// if(nav.style.display == 'flex'){
-    		// 	nav.classList.add('shrink');
-    		// 	setTimeout(function(){ links.style.display = 'none'; }, 300);
-    		// 	setTimeout(function(){ nav.style.display = 'none'; }, 500);
-    		// 	return;
-    		// }
-    		// nav.classList.remove('shrink');
-    		// nav.classList.add('expand');
-    		// nav.style.display = 'flex';
-    		// links.style.display = 'flex';
-    	}
-    </script>
-=======
     <script src="js/main.js"></script>
->>>>>>> 08031a8a95d0ed449ccfdd176f359e20c573453f
 </body>
 
 </html>
