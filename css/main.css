@@ -34,6 +34,11 @@ nav a.icon {
     display: block;
    	text-align: center;
    }
+
+   .topnav.responsive a.link:hover {
+   	background-color: #d62020;
+   	color: black;
+   }
   
   nav {
   	min-height: 30px;
@@ -73,6 +78,11 @@ nav ul li a.link {
 nav ul li a.link:hover {
 	background-color: #eeeeee;
 	color: #555555;
+}
+
+nav ul li a.brand:hover {
+	background-color: #d62020;
+	color: white;
 }
 
 .short-card{
