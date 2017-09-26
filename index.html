@@ -125,91 +125,41 @@
     <script type="text/javascript">
     	var nav = document.getElementById("responsive");
     	function amber() {
-    		// Scroll to a certain element
 			var el = document.querySelector('.amber');
-			if(nav.style.display == 'flex'){
-    			window.scroll({
-					top: el.offsetTop + 450, 
-	  				left: 0, 
-				  	behavior: 'smooth' 
-				});
-				return;
-    		}
-			window.scroll({
-				top: el.offsetTop + 40, 
-  				left: 0, 
-			  	behavior: 'smooth' 
-			});
+			goTo(el);
     	}
 
     	function indigo() {
-    		// Scroll to a certain element
 			var el = document.querySelector('.indigo');
-			if(nav.style.display == 'flex'){
-    			window.scroll({
-					top: el.offsetTop + 450, 
-	  				left: 0, 
-				  	behavior: 'smooth' 
-				});
-				return;
-    		}
-			window.scroll({
-				top: el.offsetTop + 40, 
-  				left: 0, 
-			  	behavior: 'smooth' 
-			});
+			goTo(el);
     	}
 
-
     	function green() {
-    		// Scroll to a certain element
 			var el = document.querySelector('.green');
-			if(nav.style.display == 'flex'){
-    			window.scroll({
-					top: el.offsetTop + 450, 
-	  				left: 0, 
-				  	behavior: 'smooth' 
-				});
-				return;
-    		}
-			window.scroll({
-				top: el.offsetTop + 40, 
-  				left: 0, 
-			  	behavior: 'smooth' 
-			});
+			goTo(el);
     	}
 
     	function black() {
-    		// Scroll to a certain element
 			var el = document.querySelector('.black');
-			if(nav.style.display == 'flex'){
-    			window.scroll({
-					top: el.offsetTop + 450, 
-	  				left: 0, 
-				  	behavior: 'smooth' 
-				});
-				return;
-    		}
-			window.scroll({
-				top: el.offsetTop + 40, 
-  				left: 0, 
-			  	behavior: 'smooth' 
-			});
+			goTo(el);
     	}
 
     	function red() {
-    		// Scroll to a certain element
     		var el = document.querySelector('.red');
+    		goTo(el);
+    	}
+
+    	function goTo(element) {
     		if(nav.style.display == 'flex'){
     			window.scroll({
-					top: el.offsetTop + 450, 
+					top: element.offsetTop + 450, 
 	  				left: 0, 
 				  	behavior: 'smooth' 
 				});
 				return;
     		}
 			window.scroll({
-				top: el.offsetTop + 40, 
+				top: element.offsetTop + 40, 
   				left: 0, 
 			  	behavior: 'smooth' 
 			});
